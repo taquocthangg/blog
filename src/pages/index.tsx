@@ -54,7 +54,7 @@ export default function Home({ initialPosts, total, q, tag }: Props) {
                     next={fetchMorePosts}
                     hasMore={hasMore}
                     loader={<p className="text-center py-4 text-gray-500">Loading more...</p>}
-                    endMessage={<p className="text-center py-4 text-gray-500">{"You've reached the end 🎉"}</p>}
+                    endMessage={<p className="text-center py-4 text-gray-500">{"You reached the end 🎉"}</p>}
                 >
                     {posts.map(p => (
                         <PostCard key={p.id} post={p} />
