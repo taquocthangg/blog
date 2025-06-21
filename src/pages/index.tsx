@@ -14,7 +14,7 @@ type Props = {
     tag?: string
 }
 
-export default function Home({ initialPosts, total, page, q, tag }: Props) {
+export default function Home({ initialPosts, total, q, tag }: Props) {
     const [posts, setPosts] = useState<Post[]>(initialPosts)
     const [hasMore, setHasMore] = useState(true)
     const [skip, setSkip] = useState(initialPosts.length)
